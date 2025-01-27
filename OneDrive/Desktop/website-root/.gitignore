@@ -1,0 +1,4 @@
+echo "/*" > .gitignore
+echo "!/index.html" >> .gitignore
+echo "!/netlify.toml" >> .gitignore
+echo "!/lulu/" >> .gitignore
