@@ -1,0 +1,350 @@
+
+    <html>
+    <head>
+        <style>
+            body { 
+                font-family: Arial, sans-serif; 
+                margin: 20px;
+                background-color: #f8f9fa;
+                color: #2c3e50;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            }
+            .header { 
+                background: linear-gradient(135deg, #2c3e50, #3498db);
+                color: white;
+                padding: 30px;
+                margin: -30px -30px 30px -30px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+            }
+            .header h1 {
+                margin: 0;
+                font-size: 2.5em;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+            .header-info {
+                margin-top: 10px;
+                font-size: 1.2em;
+                opacity: 0.9;
+            }
+            .section { 
+                margin-bottom: 30px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                border-left: 5px solid;
+            }
+            .section-title { 
+                font-size: 1.3em;
+                margin-bottom: 15px;
+                padding-bottom: 8px;
+                position: relative;
+            }
+            .section-title:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to right, currentColor, transparent);
+            }
+            table { 
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0;
+            }
+            th, td { 
+                padding: 12px;
+                border-bottom: 1px solid #eee;
+            }
+            th { 
+                font-weight: 600;
+                width: 60%;
+                text-align: left;
+            }
+            td { 
+                width: 40%;
+                background-color: #f8f9fa;
+            }
+            .timestamp { 
+                text-align: center;
+                color: #666;
+                font-size: 0.9em;
+                margin-top: 30px;
+                padding-top: 20px;
+                border-top: 1px solid #eee;
+            }
+            /* Section-specific colors */
+            .company-info { border-left-color: #3498db; }
+            .returns { border-left-color: #e74c3c; }
+            .performance { border-left-color: #2ecc71; }
+            .margins { border-left-color: #f1c40f; }
+            .growth { border-left-color: #9b59b6; }
+            .financial-health { border-left-color: #e67e22; }
+            .cash-flow { border-left-color: #1abc9c; }
+            .other { border-left-color: #34495e; }
+            .analyst { border-left-color: #8e44ad; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+    
+        <div class="header">
+            <h1>Southern Copper Corporation (SCCO)</h1>
+            <div class="header-info">
+                Materials | Metals and Mining<br>
+                Report Date: January 27, 2025
+            </div>
+        </div>
+    <div class="section company-info"><h2 class="section-title">Company Info</h2><table>
+                <tr>
+                    <th>Ticker</th>
+                    <td>SCCO</td>
+                </tr>
+                
+                <tr>
+                    <th>Name</th>
+                    <td>Southern Copper Corporation</td>
+                </tr>
+                
+                <tr>
+                    <th>Sector</th>
+                    <td>Materials</td>
+                </tr>
+                
+                <tr>
+                    <th>Industry</th>
+                    <td>Metals and Mining</td>
+                </tr>
+                
+                <tr>
+                    <th>Market Cap</th>
+                    <td>$76.3K</td>
+                </tr>
+                
+                <tr>
+                    <th>Next Earnings (Date)</th>
+                    <td>Jan-31-2025</td>
+                </tr>
+                </table></div><div class="section returns"><h2 class="section-title">Returns & Valuation</h2><table>
+                <tr>
+                    <th>P/E (NTM)</th>
+                    <td>20.80</td>
+                </tr>
+                
+                <tr>
+                    <th>EV/Sales (NTM)</th>
+                    <td>6.70</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF EV Yld (LTM)</th>
+                    <td>3.2%</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF Mkt Cap Yld (LTM)</th>
+                    <td>3.4%</td>
+                </tr>
+                
+                <tr>
+                    <th>P/FCF (LTM)</th>
+                    <td>29.90</td>
+                </tr>
+                
+                <tr>
+                    <th>Short Int. (%)</th>
+                    <td>N/A</td>
+                </tr>
+                </table></div><div class="section performance"><h2 class="section-title">Performance Trends</h2><table>
+                <tr>
+                    <th>Total Revenues (LTM)</th>
+                    <td>$10.9K</td>
+                </tr>
+                
+                <tr>
+                    <th>EBIT (LTM)</th>
+                    <td>$5.1K</td>
+                </tr>
+                
+                <tr>
+                    <th>Net Income (LTM)</th>
+                    <td>$3.0K</td>
+                </tr>
+                
+                <tr>
+                    <th>R&D Expenses (LTM)</th>
+                    <td>N/A</td>
+                </tr>
+                
+                <tr>
+                    <th>Interest Expense/Total (LTM)</th>
+                    <td>-327.7</td>
+                </tr>
+                </table></div><div class="section margins"><h2 class="section-title">Margins</h2><table>
+                <tr>
+                    <th>Gross Profit Margin % (LTM)</th>
+                    <td>57.1%</td>
+                </tr>
+                
+                <tr>
+                    <th>EBIT Margin % (LTM)</th>
+                    <td>46.7%</td>
+                </tr>
+                
+                <tr>
+                    <th>Net Income Margin % (LTM)</th>
+                    <td>27.7%</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF Margin % (LTM)</th>
+                    <td>23.3%</td>
+                </tr>
+                </table></div><div class="section returns"><h2 class="section-title">Returns</h2><table>
+                <tr>
+                    <th>Return on Capital (ROC) % (LTM)</th>
+                    <td>20.8%</td>
+                </tr>
+                
+                <tr>
+                    <th>Return On Equity % (LTM)</th>
+                    <td>36.2%</td>
+                </tr>
+                </table></div><div class="section growth"><h2 class="section-title">Growth</h2><table>
+                <tr>
+                    <th>Total Revenues/CAGR (3Y FY)</th>
+                    <td>7.4%</td>
+                </tr>
+                
+                <tr>
+                    <th>Total Revenues/CAGR (5Y FY)</th>
+                    <td>6.9%</td>
+                </tr>
+                </table></div><div class="section financial-health"><h2 class="section-title">Financial Health</h2><table>
+                <tr>
+                    <th>Altman Z-Score (LTM)</th>
+                    <td>7.01</td>
+                </tr>
+                
+                <tr>
+                    <th>Current Ratio (LTM)</th>
+                    <td>2.80</td>
+                </tr>
+                
+                <tr>
+                    <th>Quick Ratio (LTM)</th>
+                    <td>2.10</td>
+                </tr>
+                
+                <tr>
+                    <th>Total Debt / (EBITDA - Capex) (LTM)</th>
+                    <td>1.40</td>
+                </tr>
+                
+                <tr>
+                    <th>Total Debt / Equity (LTM)</th>
+                    <td>0.78</td>
+                </tr>
+                
+                <tr>
+                    <th>(EBITDA - Capex) / Interest Expense (LTM)</th>
+                    <td>15.3</td>
+                </tr>
+                </table></div><div class="section cash-flow"><h2 class="section-title">Cash Flow & Shareholder Returns</h2><table>
+                <tr>
+                    <th>FCF (LTM)</th>
+                    <td>$2.6K</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF / Share (LTM)</th>
+                    <td>3.18</td>
+                </tr>
+                
+                <tr>
+                    <th>Div Yield (TTM)</th>
+                    <td>2.1%</td>
+                </tr>
+                
+                <tr>
+                    <th>Dividend Per Share/CAGR (3Y TTM)</th>
+                    <td>-3.5%</td>
+                </tr>
+                
+                <tr>
+                    <th>Repurchase of Common Stock (LTM)</th>
+                    <td>N/A</td>
+                </tr>
+                
+                <tr>
+                    <th>Shareholder Yld (LTM)</th>
+                    <td>0.02</td>
+                </tr>
+                </table></div><div class="section other"><h2 class="section-title">Other Metrics</h2><table>
+                <tr>
+                    <th>SBC % Revs (LTM)</th>
+                    <td>N/A</td>
+                </tr>
+                
+                <tr>
+                    <th>Revenue Per Employee (LTM)</th>
+                    <td>N/A</td>
+                </tr>
+                </table></div><div class="section analyst"><h2 class="section-title">Analyst Expectations</h2><table>
+                <tr>
+                    <th>Revenues - Est Med (FY1E)</th>
+                    <td>$11.7K</td>
+                </tr>
+                
+                <tr>
+                    <th>Revenues - Est Med (FQ1E)</th>
+                    <td>$2.8K</td>
+                </tr>
+                
+                <tr>
+                    <th>EPS GAAP - Est Med (FY1E)</th>
+                    <td>4.41</td>
+                </tr>
+                
+                <tr>
+                    <th>EPS GAAP - Est Med (FQ1E)</th>
+                    <td>0.99</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF - Est Med (FY1E)</th>
+                    <td>$3.2K</td>
+                </tr>
+                
+                <tr>
+                    <th>FCF - Est Med (FQ1E)</th>
+                    <td>N/A</td>
+                </tr>
+                
+                <tr>
+                    <th>Net Income GAAP - Est Med (FY1E)</th>
+                    <td>$3.5K</td>
+                </tr>
+                
+                <tr>
+                    <th>Net Income GAAP - Est Med (FQ1E)</th>
+                    <td>793.35</td>
+                </tr>
+                </table></div>
+            <div class="timestamp">
+                Generated on 2025-01-27 15:18:17
+            </div>
+        </div>
+    </body>
+    </html>
+    

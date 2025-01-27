@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/lulu/analyst"
+  to = "/lulu/analyst.html"
+
+[[redirects]]
+  from = "/lulu/onepage"
+  to = "/lulu/onepage.html"
+
+[[redirects]]
+  from = "/lulu/tables"
+  to = "/lulu/tables.html"
