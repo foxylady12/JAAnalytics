@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAAnalytics - Financial Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background: linear-gradient(to right, #1a365d, #2d3748);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .header p {
+            margin: 0.5rem 0 0;
+            opacity: 0.9;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .zone-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .zone-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .zone-title {
+            font-size: 1.25rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .report-link {
+            display: block;
+            padding: 0.75rem;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.2s;
+        }
+
+        .report-link:hover {
+            background-color: #f7fafc;
+            color: #2b6cb0;
+        }
+
+        .search-section {
+            background: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .search-title {
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+        }
+
+        #companySearch {
+            width: 100%;
+            max-width: 500px;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .company-result {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .company-header {
+            background: #2d3748;
+            color: white;
+            padding: 0.75rem;
+            font-weight: bold;
+        }
+
+        .company-reports {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>JAAnalytics</h1>
+        <p>Professional Financial Analysis Platform</p>
+    </header>
+
+    <div class="content-grid">
+        <!-- Portfolio Analysis -->
+        <div class="zone-card">
+            <h2 class="zone-title">📊 Portfolio Analysis</h2>
+            <div class="zone-content">
+                <a href="portfolio/overview.html" class="report-link">Portfolio Overview</a>
+                <a href="portfolio/performance.html" class="report-link">Performance Analytics</a>
+                <a href="portfolio/risk.html" class="report-link">Risk Metrics</a>
+            </div>
+        </div>
+
+        <!-- Quality Rankings -->
+        <div class="zone-card">
+            <h2 class="zone-title">🏆 Quality Rankings</h2>
+            <div class="zone-content">
+                <a href="quality/overview.html" class="report-link">Quality Score Overview</a>
+                <a href="quality/fundamentals.html" class="report-link">Fundamental Rankings</a>
+                <a href="quality/technical.html" class="report-link">Technical Rankings</a>
+            </div>
+        </div>
+
+        <!-- Research Reports -->
+        <div class="zone-card">
+            <h2 class="zone-title">📑 Research Reports</h2>
+            <div class="zone-content">
+                <a href="research/onepagers.html" class="report-link">One Pagers</a>
+                <a href="research/full-analysis.html" class="report-link">Full Analysis Reports</a>
+                <a href="research/quarterly.html" class="report-link">Quarterly Reviews</a>
+            </div>
+        </div>
+
+        <!-- Company Analysis -->
+        <div class="zone-card">
+            <h2 class="zone-title">🏢 Company Analysis</h2>
+            <div class="zone-content" id="companyList">
+                <a href="company/overview.html" class="report-link">Company Overview</a>
+                <a href="company/comparisons.html" class="report-link">Peer Comparisons</a>
+                <a href="company/valuation.html" class="report-link">Valuation Models</a>
+            </div>
+        </div>
+
+        <!-- Deep Dives -->
+        <div class="zone-card">
+            <h2 class="zone-title">🔍 Deep Dives</h2>
+            <div class="zone-content">
+                <a href="deepdive/industry.html" class="report-link">Industry Analysis</a>
+                <a href="deepdive/competitive.html" class="report-link">Competitive Dynamics</a>
+                <a href="deepdive/business-model.html" class="report-link">Business Model Analysis</a>
+            </div>
+        </div>
+
+        <!-- Market Analysis -->
+        <div class="zone-card">
+            <h2 class="zone-title">📈 Market Analysis</h2>
+            <div class="zone-content">
+                <a href="market/overview.html" class="report-link">Market Overview</a>
+                <a href="market/sectors.html" class="report-link">Sector Analysis</a>
+                <a href="market/indicators.html" class="report-link">Economic Indicators</a>
+            </div>
+        </div>
+
+        <!-- Macro Analysis -->
+        <div class="zone-card">
+            <h2 class="zone-title">🌐 Macro Analysis</h2>
+            <div class="zone-content">
+                <a href="macro/economic.html" class="report-link">Economic Analysis</a>
+                <a href="macro/policy.html" class="report-link">Policy Updates</a>
+                <a href="macro/global.html" class="report-link">Global Trends</a>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="zone-card">
+            <h2 class="zone-title">📚 Articles</h2>
+            <div class="zone-content">
+                <a href="articles/research.html" class="report-link">Latest Research</a>
+                <a href="articles/insights.html" class="report-link">Market Insights</a>
+                <a href="articles/perspectives.html" class="report-link">Industry Perspectives</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="search-section">
+        <div class="search-container">
+            <h2 class="search-title">Company Search</h2>
+            <input 
+                type="text" 
+                id="companySearch" 
+                placeholder="Search by ticker (e.g., LULU, AAPL)..." 
+                onkeyup="searchCompany()"
+            >
+            <div id="searchResults"></div>
+        </div>
+    </section>
+
+    <script>
+        const companyReports = {
+            'INDEX': {
+                name: 'Market Indices',
+                reports: {
+                    'INDEX_NASDAQ_quality_pricing_ratio': 'NASDAQ Quality Pricing Ratio',
+                    'INDEX_NASDAQ_quality_ranking': 'NASDAQ Quality Ranking'
+                }
+            },
+            'NXT': {
+                name: 'Nextracker',
+                reports: {
+                    'NXT_deepdive': 'Deep Dive Analysis'
+                }
+            },
+            'LULU': {
+                name: 'Lululemon',
+                reports: {
+                    'LULU_table': 'Financial Tables',
+                    'LULU_deepdive': 'Deep Dive Analysis',
+                    'LULU_value': 'Valuation Analysis',
+                    'LULU_onepage': 'One Page Summary',
+                    'LULU_quality': 'Quality Analysis'
+                }
+            }
+        };
+
+        function searchCompany() {
+            const input = document.getElementById('companySearch');
+            const filter = input.value.toUpperCase();
+            const resultsDiv = document.getElementById('searchResults');
+            
+            if (!filter) {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+
+            let resultsHTML = '';
+
+            for (const [ticker, company] of Object.entries(companyReports)) {
+                if (ticker.includes(filter)) {
+                    resultsHTML += `
+                        <div class="company-result">
+                            <div class="company-header">
+                                ${ticker} - ${company.name}
+                            </div>
+                            <div class="company-reports">
+                    `;
+
+                    for (const [reportId, reportName] of Object.entries(company.reports)) {
+                        resultsHTML += `
+                            <a href="companies/${ticker}/${reportId}.html" class="report-link">
+                                ${reportName}
+                            </a>
+                        `;
+                    }
+
+                    resultsHTML += `
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            resultsDiv.innerHTML = resultsHTML || '<p style="text-align: center; color: #666; padding: 1rem;">No matching companies found</p>';
+        }
+    </script>
+</body>
+</html>
